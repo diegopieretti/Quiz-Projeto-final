@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <link rel="stylesheet" href="styles.css" />
+  <title>Quiz por Categorias</title>
+</head>
+<body>
+  <div id="categories" class="categories"></div>
+  <div id="quiz" class="hidden">
+    <div class="question"></div>
+    <div class="options"></div>
+    <button id="next-btn" class="hidden">Próxima</button>
+  </div>
+  <div id="result" class="hidden">
+    <p>Você acertou <span id="score"></span> de <span id="total"></span>.</p>
+    <button id="restart-btn" onclick="restartQuiz()">Reiniciar</button>
+  </div>
+  <script type="module" src="app.js"></script>
+</body>
+</html>
